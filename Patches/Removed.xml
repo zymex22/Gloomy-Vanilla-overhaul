@@ -60,7 +60,7 @@
 						defName="RGK_TableF" or 
 						defName="RGK_TableG" or 
 						defName="RGK_TableH" or 
-						defName="GL_Shelf"]/*/..
+						defName="GL_Shelf"]/Defs/..
 						|
 						Defs/ThingDef[defName="Armchair"][comps]/comps
 					</xpath>

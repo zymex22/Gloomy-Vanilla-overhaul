@@ -8,19 +8,19 @@
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef/designationCategory[text()="OldStyleFurniture"]</xpath>
+					<xpath>Defs/ThingDef/designationCategory[text()="OldStyleFurniture"]</xpath>
 					<value>
 						<designationCategory>Structure</designationCategory>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="GL_DoorFrame"]/statBases/Beauty</xpath>
+					<xpath>Defs/ThingDef[defName="GL_DoorFrame"]/statBases/Beauty</xpath>
 					<value>
 						<Beauty>5</Beauty>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>*/ThingDef[defName="GL_WindowWall" or defName="GL_VentWall" or defName="GL_DoorFrame"]</xpath>
+					<xpath>Defs/ThingDef[defName="GL_WindowWall" or defName="GL_VentWall" or defName="GL_DoorFrame"]</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>ComplexFurniture</li>
@@ -28,7 +28,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>*/ThingDef[defName="GL_BoundaryStoneCorner" or defName="GL_BoundaryStone"]</xpath>
+					<xpath>Defs/ThingDef[defName="GL_BoundaryStoneCorner" or defName="GL_BoundaryStone"]</xpath>
 					<value>
 						<researchPrerequisites>
 							<li>Stonecutting</li>
@@ -36,7 +36,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="GL_Wall"]/statBases</xpath>
+					<xpath>Defs/ThingDef[defName="GL_Wall"]/statBases</xpath>
 					<value>
 						<statBases>
 							<MaxHitPoints>350</MaxHitPoints>
@@ -46,7 +46,7 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="RGK_WoodFence"]/statBases</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_WoodFence"]/statBases</xpath>
 					<value>
 						<statBases>
 							<MaxHitPoints>150</MaxHitPoints>
@@ -56,13 +56,13 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="RGK_WoodFence"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_WoodFence"]/costStuffCount</xpath>
 					<value>
 						<costStuffCount>2</costStuffCount>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="RGK_Door"]/statBases</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_Door"]/statBases</xpath>
 					<value>
 						<statBases>
 							<MaxHitPoints>100</MaxHitPoints>
@@ -72,13 +72,13 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="RGK_Door"]/costStuffCount</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_Door"]/costStuffCount</xpath>
 					<value>
 						<costStuffCount>2</costStuffCount>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="RGK_Door"]/costList</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_Door"]/costList</xpath>
 					<value>
 						<costList>
 							<Steel>2</Steel>

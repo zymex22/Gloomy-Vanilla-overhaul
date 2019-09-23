@@ -8,7 +8,7 @@
 			<success>Normal</success>
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="TableButcher"]/graphicData</xpath>
+					<xpath>Defs/ThingDef[defName="TableButcher"]/graphicData</xpath>
 					<value>
 						<graphicData>
 							<texPath>Things/Building/Production/butcher</texPath>

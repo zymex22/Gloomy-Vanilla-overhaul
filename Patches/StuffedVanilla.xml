@@ -10,7 +10,7 @@
 				<li Class="PatchOperationSequence">
 					<operations>
 						<li Class="PatchOperationReplace">
-							<xpath>*/ThingDef[defName="FueledSmithy"]/costList</xpath>
+							<xpath>Defs/ThingDef[defName="FueledSmithy"]/costList</xpath>
 							<value>
 								<costList>
 									<Steel>40</Steel>
@@ -18,17 +18,17 @@
 							</value>
 						</li>
 						<li Class="PatchOperationConditional">
-							<xpath>*/ThingDef[defName="FueledSmithy"]/stuffCategories</xpath>
+							<xpath>Defs/ThingDef[defName="FueledSmithy"]/stuffCategories</xpath>
 							<nomatch Class="PatchOperationSequence">
 								<operations>
 									<li Class="PatchOperationAdd">
-										<xpath>*/ThingDef[defName="FueledSmithy"]</xpath>
+										<xpath>Defs/ThingDef[defName="FueledSmithy"]</xpath>
 										<value>
 											<costStuffCount>60</costStuffCount>
 										</value>
 									</li>
 									<li Class="PatchOperationAdd">
-										<xpath>*/ThingDef[defName="FueledSmithy"]</xpath>
+										<xpath>Defs/ThingDef[defName="FueledSmithy"]</xpath>
 										<value>
 											<stuffCategories>
 												<li>Metallic</li>
@@ -37,7 +37,7 @@
 										</value>
 									</li>
 									<li Class="PatchOperationRemove">
-										<xpath>*/ThingDef[defName="FueledSmithy"]/constructEffect</xpath>
+										<xpath>Defs/ThingDef[defName="FueledSmithy"]/constructEffect</xpath>
 									</li>
 								</operations>
 							</nomatch>
@@ -48,19 +48,19 @@
 				<li Class="PatchOperationSequence">
 					<operations>
 						<li Class="PatchOperationReplace">
-							<xpath>*/ThingDef[defName="FueledStove"]/size</xpath>
+							<xpath>Defs/ThingDef[defName="FueledStove"]/size</xpath>
 							<value>
 								<size>(2,1)</size>
 							</value>
 						</li>
 						<li Class="PatchOperationReplace">
-							<xpath>*/ThingDef[defName="FueledStove"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelConsumptionRate</xpath>
+							<xpath>Defs/ThingDef[defName="FueledStove"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelConsumptionRate</xpath>
 							<value>
 								<fuelConsumptionRate>50</fuelConsumptionRate>
 							</value>
 						</li>
 						<li Class="PatchOperationReplace">
-							<xpath>*/ThingDef[defName="FueledStove"]/costList</xpath>
+							<xpath>Defs/ThingDef[defName="FueledStove"]/costList</xpath>
 							<value>
 								<costList>
 									<Steel>40</Steel>
@@ -68,17 +68,17 @@
 							</value>
 						</li>
 						<li Class="PatchOperationConditional">
-							<xpath>*/ThingDef[defName="FueledStove"]/stuffCategories</xpath>
+							<xpath>Defs/ThingDef[defName="FueledStove"]/stuffCategories</xpath>
 							<nomatch Class="PatchOperationSequence">
 								<operations>
 									<li Class="PatchOperationAdd">
-										<xpath>*/ThingDef[defName="FueledStove"]</xpath>
+										<xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
 										<value>
 											<costStuffCount>40</costStuffCount>
 										</value>
 									</li>
 									<li Class="PatchOperationAdd">
-										<xpath>*/ThingDef[defName="FueledStove"]</xpath>
+										<xpath>Defs/ThingDef[defName="FueledStove"]</xpath>
 										<value>
 											<stuffCategories>
 												<li>Metallic</li>
@@ -87,7 +87,7 @@
 										</value>
 									</li>
 									<li Class="PatchOperationRemove">
-										<xpath>*/ThingDef[defName="FueledStove"]/constructEffect</xpath>
+										<xpath>Defs/ThingDef[defName="FueledStove"]/constructEffect</xpath>
 									</li>
 								</operations>
 							</nomatch>
