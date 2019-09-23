@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Linkables</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="KitchenCupboard"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Linkables/Cupboard</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(2,2)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>*/ThingDef[defName="KitchenCupboard"]/stuffCategories</xpath>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>*/ThingDef[defName="KitchenCupboard"]</xpath>
+								<value>
+									<costStuffCount>50</costStuffCount>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>*/ThingDef[defName="KitchenCupboard"]</xpath>
+								<value>
+									<stuffCategories>
+										<li>Metallic</li>
+										<li>Woody</li>
+									</stuffCategories>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>*/ThingDef[defName="KitchenCupboard"]/costList</xpath>
+								<value>
+									<costList>
+										<Steel>25</Steel>
+									</costList>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

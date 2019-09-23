@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GloomyFurniture</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Bed"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/RGK_bedSingle</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(3,4)</drawSize>
+							<damageData>
+								<rect>(0,0.05,1,1.95)</rect>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DoubleBed"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/RGK_bedDouble</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(4.05,4.05)</drawSize>
+							<damageData>
+								<rect>(0,0.05,2,1.95)</rect>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RoyalBed"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/GL_ClassyDoubleBed</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<rect>(0,0.05,2,1.95)</rect>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="EndTable"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Furniture/RGK_EndTable</texPath>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Dresser"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/RGK_Dresser</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Stool"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/RGK_Chair2</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<damageData>
+								<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+								<rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+								<rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+								<rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.18, 0.23, 0.18)</volume>
+							</shadowData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DiningChair"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/RGK_Chair</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(3,3)</drawSize>
+							<damageData>
+								<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+								<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+								<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+								<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+							</damageData>
+							<shadowData>
+								<volume>(0.23, 0.26, 0.23)</volume>
+							</shadowData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<!-- Tables -->
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Table1x2c"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Table/RGK_Table2x1</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Table1x2c"]/size</xpath>
+					<value>
+						<size>(2,1)</size>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Table2x2c"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/RGK_TableC2x2</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Table2x4c"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Table/RGK_Tableb3x2</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Table2x4c"]/size</xpath>
+					<value>
+						<size>(3,2)</size>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Table3x3c"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Table/RGK_Table3x3</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<!-- Benches -->
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HandTailoringBench"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Production/GL_HandTailoringBench</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>3.7</drawSize>
+							<shaderType>CutoutComplex</shaderType>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ElectricTailoringBench"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Production/GL_TailoringBench</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>3.7</drawSize>
+							<shaderType>CutoutComplex</shaderType>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FueledSmithy"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Production/GL_Smithy</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>3.7</drawSize>
+							<shadowData>
+								<volume>(2.8, 0.35, 0.59)</volume>
+								<offset>(0, 0, 0.08)</offset>
+							</shadowData>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FueledStove"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Production/RGK_Countertop</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<shaderType>CutoutComplex</shaderType>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Shelf"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/GL_Shelf</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(3,2)</drawSize>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Production/RGK_reserch</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>4</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/size</xpath>
+					<value>
+						<size>(3,1)</size>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="SimpleResearchBench"][not(comps)]</xpath>
+					<value>
+						<comps />
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps[not(li/@Class="CompProperties_AffectedByFacilities")]</xpath>
+					<value>
+						<li Class="CompProperties_AffectedByFacilities">
+							<linkableFacilities />
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>GL_Bookshelf</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>	

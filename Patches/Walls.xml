@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GloomyFurniture</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef/designationCategory[text()="OldStyleFurniture"]</xpath>
+					<value>
+						<designationCategory>Structure</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="GL_DoorFrame"]/statBases/Beauty</xpath>
+					<value>
+						<Beauty>5</Beauty>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="GL_WindowWall" or defName="GL_VentWall" or defName="GL_DoorFrame"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>ComplexFurniture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="GL_BoundaryStoneCorner" or defName="GL_BoundaryStone"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Stonecutting</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="GL_Wall"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MaxHitPoints>350</MaxHitPoints>
+							<WorkToBuild>135</WorkToBuild>
+							<Flammability>1.0</Flammability>
+						</statBases>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_WoodFence"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MaxHitPoints>150</MaxHitPoints>
+							<WorkToBuild>100</WorkToBuild>
+							<Flammability>1.0</Flammability>
+						</statBases>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_WoodFence"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>2</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Door"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MaxHitPoints>100</MaxHitPoints>
+							<WorkToBuild>250</WorkToBuild>	  
+							<Flammability>1.0</Flammability>
+						</statBases>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Door"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>2</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Door"]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>2</Steel>
+						</costList>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

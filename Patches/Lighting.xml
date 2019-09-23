@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GloomyFurniture</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<!-- Fireplace -->
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Fireplace"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelConsumptionRate</xpath>
+					<value>
+						<fuelConsumptionRate>10.0</fuelConsumptionRate>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Fireplace"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelCapacity</xpath>
+					<value>
+						<fuelCapacity>30.0</fuelCapacity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Fireplace"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Temperature</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Fireplace"]/statBases/Beauty</xpath>
+					<value>
+						<Beauty>10</Beauty>
+					</value>
+				</li>
+				
+				<!-- Lamps -->
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_lamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelConsumptionRate</xpath>
+					<value>
+						<fuelConsumptionRate>2.2</fuelConsumptionRate>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_lamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelCapacity</xpath>
+					<value>
+						<fuelCapacity>20.0</fuelCapacity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_lamp"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="RGK_lamp"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>ComplexFurniture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_LampM"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelConsumptionRate</xpath>
+					<value>
+						<fuelConsumptionRate>2.2</fuelConsumptionRate>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_LampM"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelCapacity</xpath>
+					<value>
+						<fuelCapacity>20.0</fuelCapacity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_LampM"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="RGK_LampM"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>ComplexFurniture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Street_Lamp"]/comps/li[@Class = "CompProperties_Power"]/basePowerConsumption</xpath>
+					<value>
+						<basePowerConsumption>35</basePowerConsumption>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Street_Lamp"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="RGK_Street_Lamp"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Electricity</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Street_Lamp_Seven"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelConsumptionRate</xpath>
+					<value>
+						<fuelConsumptionRate>2.6</fuelConsumptionRate>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Street_Lamp_Seven"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelCapacity</xpath>
+					<value>
+						<fuelCapacity>30.0</fuelCapacity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Street_Lamp_Seven"]/statBases/Beauty</xpath>
+					<value>
+						<Beauty>5</Beauty>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="RGK_Street_Lamp_Seven"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="RGK_Street_Lamp_Seven"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>ComplexFurniture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="GlowObject"]/comps/li[@Class = "CompProperties_Glower"]/glowRadius</xpath>
+					<value>
+						<glowRadius>6</glowRadius>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="GL_Wall_Lamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelConsumptionRate</xpath>
+					<value>
+						<fuelConsumptionRate>1.0</fuelConsumptionRate>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="GL_Wall_Lamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelCapacity</xpath>
+					<value>
+						<fuelCapacity>6.0</fuelCapacity>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[@Name="WallLightBase"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="GL_Wall_LampE"]/comps/li[@Class = "CompProperties_Power"]/basePowerConsumption</xpath>
+					<value>
+						<basePowerConsumption>10</basePowerConsumption>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="GL_Wall_LampE"]/researchPrerequisites</xpath>
+					<value>
+						<li>Electricity</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

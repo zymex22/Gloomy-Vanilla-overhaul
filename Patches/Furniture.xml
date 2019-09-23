@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GloomyFurniture</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RKGWineRackB"]/statBases/Beauty</xpath>
+					<value>
+						<Beauty>8</Beauty>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="GL_Bookshelf"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Misc</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="GL_Bookshelf"]/comps/li[@Class = "CompProperties_Facility"]/statOffsets/ResearchSpeedFactor</xpath>
+					<value>
+						<ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GL_Bookshelf" or defName="RGK_MiniTableB"]</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>ComplexFurniture</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[
+						@Name="RGKFurnitureBase" or
+						defName="WardrobeA" or 
+ 						defName="GL_TablewareShelf" or 
+						defName="GL_Cupboard" or
+						defName="RGK_Manger" or 
+						defName="RGK_DogBowl" or 
+						defName="GL_Locker" or 
+						defName="RKGWineRackB"]/designationCategory
+					</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
