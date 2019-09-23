@@ -8,31 +8,31 @@
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>*/ThingDef[defName="RGK_DoorOld"]</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_DoorOld"]</xpath>
 					<value>
 						<uiIconScale>0.9</uiIconScale>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="RGK_Street_Lamp"]/uiIconScale</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_Street_Lamp"]/uiIconScale</xpath>
 					<value>
 						<uiIconScale>1.8</uiIconScale>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>*/ThingDef[defName="RGK_Street_Lamp"]</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_Street_Lamp"]</xpath>
 					<value>
 						<uiIconOffset>(0, 0.15)</uiIconOffset>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>*/ThingDef[defName="RGK_Street_Lamp_Seven"]/uiIconScale</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_Street_Lamp_Seven"]/uiIconScale</xpath>
 					<value>
 						<uiIconScale>1.8</uiIconScale>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>*/ThingDef[defName="RGK_Street_Lamp_Seven"]</xpath>
+					<xpath>Defs/ThingDef[defName="RGK_Street_Lamp_Seven"]</xpath>
 					<value>
 						<uiIconOffset>(0, 0.15)</uiIconOffset>
 					</value>

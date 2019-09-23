@@ -1,0 +1,19 @@
+<Manifest>
+
+  <version>1.0.0</version>
+  <dependencies>
+    <li>GloomyFurniture</li>
+  </dependencies>
+  <loadAfter>
+    <li>GloomyExtra-Kitchen</li>
+    <li>GloomyDeco</li>
+    <li>MoreLinkables</li>
+  </loadAfter>
+  <suggests>
+    <li>DocWorld</li>
+  </suggests>
+  <showCrossPromotions>true</showCrossPromotions>
+  <manifestUri>https://raw.githubusercontent.com/zymex22/Gloomy-Vanilla-overhaul/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/zymex22/Gloomy-Vanilla-overhaul/releases</downloadUri>
+
+</Manifest>
