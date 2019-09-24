@@ -39,8 +39,8 @@ In time i will update this more with more mod integration and expand what origin
 -Fixed rugs to new decor menu in newest gloomy furniture <br /> 
 -Bring back linkables for beds <br /> 
 -Semo updated hes mod Gloomy Extra - Kitchen to support my version <br />
--Support for fluffys mod manager (load order suggestion)
--New texture for Vanilla tool cabinet (texture by Semo)
+-Support for fluffys mod manager (load order suggestion)<br />
+-New texture for Vanilla tool cabinet (texture by Semo)<br />
 // i have decided to still leave something out from original gloomy, to minimize cluttered menus, 2. wall type will stay out. <br /> 
 2 tables removed, second type beds removed, light is untouched. <br /> 
 let me know if you missing anything else and i might add it back in. <br /> 
