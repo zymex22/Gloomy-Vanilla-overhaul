@@ -48,13 +48,13 @@ let me know if you missing anything else and i might add it back in. <br />
 
 
 
-disclaimer<br /> 
+#### disclaimer<br /> 
 Im am no modder/programmer, i have no experience its all trial and error, just feld this was needed and asked for in original mod.
 and since Owlchemist left it open to take, i just updated it =) hope he come back someday =) <br /> 
 <br /> 
 So any ideas/fixes if you know the solution enlighten me, so i dont have to figure how to fix.<br /> 
 
-Big Thanks to<br /> 
+#### Big Thanks to<br /> 
 Dr_Zhivago supporting me in my no modding knowladge.<br /> 
 Semo for patching Gloomy Extra - Kitchen to this mod too.<br /> 
 Owlchemist for original gloomy vanilla and letting me make this.<br /> 
