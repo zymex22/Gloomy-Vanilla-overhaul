@@ -40,6 +40,7 @@ In time i will update this more with more mod integration and expand what origin
 -Bring back linkables for beds <br /> 
 -Semo updated hes mod Gloomy Extra - Kitchen to support my version <br />
 -Support for fluffys mod manager (load order suggestion)
+-New texture for Vanilla tool cabinet (texture by Semo)
 // i have decided to still leave something out from original gloomy, to minimize cluttered menus, 2. wall type will stay out. <br /> 
 2 tables removed, second type beds removed, light is untouched. <br /> 
 let me know if you missing anything else and i might add it back in. <br /> 
@@ -56,7 +57,7 @@ So any ideas/fixes if you know the solution enlighten me, so i dont have to figu
 
 #### Big Thanks to<br /> 
 Dr_Zhivago supporting me in my no modding knowladge.<br /> 
-Semo for patching Gloomy Extra - Kitchen to this mod too.<br /> 
+Semo for help with textures, and patching gloomy kitchen mod.<br /> 
 Owlchemist for original gloomy vanilla and letting me make this.<br /> 
 And all original mod makers from the mods we use.<br /> 
 
