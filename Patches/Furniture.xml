@@ -48,6 +48,16 @@
 						<designationCategory>Furniture</designationCategory>
 					</value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[
+						defName="RugA_Small" or
+						defName="RugA" or
+						defName="RugA_Large"]/graphicData/graphicClass
+					</xpath>
+					<value>
+						<graphicClass>Graphic_Multi</graphicClass>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
