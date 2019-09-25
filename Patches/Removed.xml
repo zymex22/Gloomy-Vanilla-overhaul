@@ -52,7 +52,13 @@
 						defName="RGK_Street_Lamp_SevenE" or 
 						defName="GL_Bonfire" or 
 						defName="RGK_FireplaceE" or 
-						defName="RGK_SimpleResearchBench" or 
+						defName="RGK_SimpleResearchBench" or
+						defName="RugB_Small" or 
+ 						defName="RugC_Small" or
+						defName="RugB" or 
+						defName="RugC" or
+						defName="RugB_Large" or 
+						defName="RugC_Large" or
 						defName="RGK_TableA" or 
 						defName="RGK_TableC" or 
 						defName="RGK_TableD" or 
