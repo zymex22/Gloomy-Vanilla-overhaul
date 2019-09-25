@@ -58,6 +58,16 @@
 						<graphicClass>Graphic_Multi</graphicClass>
 					</value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[
+						defName="RugA_Small" or
+						defName="RugA" or
+						defName="RugA_Large"]/rotatable
+					</xpath>
+					<value>
+						<rotatable>True</rotatable>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
