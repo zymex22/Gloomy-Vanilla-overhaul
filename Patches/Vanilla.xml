@@ -96,6 +96,61 @@
 					</value>
 				</li>
 
+								<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ToolCabinet"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Linkables/ToolCabinet</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ToolCabinet"]/size</xpath>
+					<value>
+						<size>(2,1)</size>
+					</value>
+				</li>
+				
+								<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="ToolCabinet"]/stuffCategories</xpath>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
+								<value>
+									<costStuffCount>50</costStuffCount>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
+								<value>
+									<stuffCategories>
+										<li>Metallic</li>
+										<li>Woody</li>
+									</stuffCategories>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[defName="ToolCabinet"]/costList</xpath>
+								<value>
+									<costList>
+										<Steel>25</Steel>
+									</costList>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Stool"]/graphicData</xpath>
 					<value>
