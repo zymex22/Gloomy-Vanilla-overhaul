@@ -60,5 +60,6 @@ So any ideas/fixes if you know the solution enlighten me, so i dont have to figu
 Dr_Zhivago supporting me in my no modding knowladge.<br /> 
 Semo for help with textures, and patching gloomy kitchen mod.<br /> 
 Owlchemist for original gloomy vanilla and letting me make this.<br /> 
+GloomyLynx for greate textures as a start <br /> 
 And all original mod makers from the mods we use.<br /> 
 
