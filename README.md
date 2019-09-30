@@ -42,6 +42,7 @@ In time i will update this more with more mod integration and expand what origin
 -Support for fluffys mod manager (load order suggestion)<br />
 -New texture for Vanilla tool cabinet (texture by Semo)<br />
 -Rotate option for rugs to change texture to save space in menu (gloomy deco idea)<br /> 
+-Removed 3x1 gloomy butchering table, if gloomy extra - kitchen is installed that one is used.<br /> 
 // i have decided to still leave something out from original gloomy, to minimize cluttered menus, 2. wall type will stay out. <br /> 
 2 tables removed, second type beds removed, light is untouched. <br /> 
 let me know if you missing anything else and i might add it back in. <br /> 
