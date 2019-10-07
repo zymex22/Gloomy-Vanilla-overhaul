@@ -36,11 +36,11 @@ In time i will update this more with more mod integration and expand what origin
 2.0 for first release me and Dr_Zhivago have made some optimization and following: <br /> 
 -Updated original mod unbanned alot of the "removed gloomy stuff" <br /> 
 -Moved stuff around to right menus <br /> 
--Fixed rugs to new decor menu in newest gloomy furniture <br /> 
--Bring back linkables for beds <br /> 
+-Bring back linkables buttons for beds <br /> 
 -Semo updated hes mod Gloomy Extra - Kitchen to support my version <br />
 -Support for fluffys mod manager (load order suggestion)<br />
 -New texture for Vanilla tool cabinet (texture by Semo)<br />
+-Fixed rugs to new decor menu in newest gloomy furniture <br /> 
 -Rotate option for rugs to change texture to save space in menu (gloomy deco idea)<br /> 
 -Removed 3x1 gloomy butchering table, if gloomy extra - kitchen is installed that one is used.<br /> 
 // i have decided to still leave something out from original gloomy, to minimize cluttered menus, 2. wall type will stay out. <br /> 
