@@ -120,14 +120,14 @@
 					</value>
 				</li>
 				
-								<li Class="PatchOperationConditional">
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="ToolCabinet"]/stuffCategories</xpath>
 					<nomatch Class="PatchOperationSequence">
 						<operations>
 							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
 								<value>
-									<costStuffCount>50</costStuffCount>
+									<costStuffCount>0</costStuffCount>
 								</value>
 							</li>
 							<li Class="PatchOperationAdd">
@@ -136,15 +136,8 @@
 									<stuffCategories>
 										<li>Metallic</li>
 										<li>Woody</li>
+										<li>Stony</li>
 									</stuffCategories>
-								</value>
-							</li>
-							<li Class="PatchOperationReplace">
-								<xpath>Defs/ThingDef[defName="ToolCabinet"]/costList</xpath>
-								<value>
-									<costList>
-										<Steel>25</Steel>
-									</costList>
 								</value>
 							</li>
 						</operations>
