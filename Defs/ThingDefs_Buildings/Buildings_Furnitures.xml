@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SMFurnitureWithQualityBase">
+		<defName>SM_Curtains</defName>
+		<label>door frame curtains</label>
+		<description>Curtains for a door frame, its only a docor not a door.</description>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>true</canOverlapZones>
+		<graphicData>
+			<texPath>Things/Building/Furniture/DoorFrameCurtain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>3.25,3.25</drawSize>
+		</graphicData>
+		<fillPercent>0.15</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<uiIconPath>Things/Building/Furniture/DoorFrameCurtainUI</uiIconPath>
+		<uiIconScale>1.5</uiIconScale>
+		<stuffCategories>
+			<li>Fabric</li>	
+			<!-- <li>Leathery</li> -->
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<techLevel>Medieval</techLevel>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>200</WorkToBuild>
+			<Mass>10</Mass>
+			<Beauty>5</Beauty>
+		</statBases>
+		<clearBuildingArea>false</clearBuildingArea>
+		<tradeability>None</tradeability>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
