@@ -44,7 +44,7 @@
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="DoubleBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-					<value>		
+					<value>
 						<li>WardrobeA</li>
 						<li>GL_Teddy</li>
 					</value>
@@ -96,7 +96,7 @@
 					</value>
 				</li>
 
-								<li Class="PatchOperationReplace">
+				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="ToolCabinet"]/graphicData</xpath>
 					<value>
 						<graphicData>
@@ -112,14 +112,14 @@
 						</graphicData>
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="ToolCabinet"]/size</xpath>
 					<value>
 						<size>(2,1)</size>
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[defName="ToolCabinet"]/stuffCategories</xpath>
 					<nomatch Class="PatchOperationSequence">
@@ -187,6 +187,116 @@
 						</graphicData>
 					</value>
 				</li>
+
+				<!-- Other vanilla stuff -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="TorchLamp"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/TorchLamp</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(1,1)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+
+				<!-- Joy -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Telescope"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/Telescope</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(1,1)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HoopstoneRing"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/HoopstoneRing</texPath>
+							<graphicClass>Graphic_single</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(1,1)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="GameOfUrBoard"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/GameOfUr</texPath>
+							<graphicClass>Graphic_multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(2,2)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+			
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HorseshoesPin"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/HorseshoesPin</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<drawSize>(1,1)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>				
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="TubeTelevision"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/TubeTelevision</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(1,1)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>				
+
 
 				<!-- Tables -->
 
