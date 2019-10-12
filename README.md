@@ -15,7 +15,6 @@ In time i will update this more with more mod integration and expand what origin
 -Gloomy Extra - Kitchen <br /> 
 -Gloomy Deco (planned to add) <br /> 
 -More linkables <br /> 
--SD medicaddons <br /> 
  <br /> 
  <br /> 
 ### Load order:

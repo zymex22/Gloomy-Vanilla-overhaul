@@ -262,7 +262,6 @@
 					</value>
 				</li>
 			
-
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="HorseshoesPin"]/graphicData</xpath>
 					<value>
@@ -297,6 +296,56 @@
 					</value>
 				</li>				
 
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ChessTable"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/Gloomy_ChessTable</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(2,2)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="PokerTable"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/Gloomy_PokerTable2x2</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>				
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BilliardsTable"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Building/Furniture/BilliardsTable</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>		
 
 				<!-- Tables -->
 
