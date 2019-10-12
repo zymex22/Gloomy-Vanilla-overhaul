@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+	<ThingDef ParentName="SMFurnitureWithQualityBase">
+		<defName>SM_Dice_Table</defName>
+		<label>dice table</label>
+		<description>A table designed for playing dice games. A great way to test your luck.</description>
+		<graphicData>
+			<texPath>Things/Joy/Gloomy_DiceTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<fillPercent>0.40</fillPercent>
+		<building>
+			<joyKind>Gaming_Cerebral</joyKind>
+		</building>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+			<JoyGainFactor>1.2</JoyGainFactor>
+		</statBases>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<costList>
+			<Cloth>25</Cloth>
+		</costList>
+		<pathCost>70</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
+		<designationCategory>Joy</designationCategory>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+		
+	</ThingDef>
+
+</Defs>

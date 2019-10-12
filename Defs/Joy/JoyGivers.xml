@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JoyGiverDef>
+		<defName>JoyGiver_Play_Dice</defName>
+		<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+		<requireChair>false</requireChair>
+		<baseChance>1</baseChance>
+		<thingDefs>
+			<li>SM_Dice_Table</li>
+		</thingDefs>
+		<jobDef>JobDef_Play_Dice</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<requiredCapacities>
+			<li>Sight</li>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+	
+</Defs>
