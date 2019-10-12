@@ -20,10 +20,6 @@
 						text()="GL_ElectricTailoringBench" or 
 						text()="GL_ElectricSmithy"]
 						|
-						Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities//li[
-						text()="GL_Cupboard" or 
-						text()="GL_TablewareShelf"]
-						|
 						Defs/DesignationCategoryDef[defName="OldStyleFurniture"]
 						|
 						Defs/ThingDef[
