@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="SMFurnitureWithQualityBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>SM_Curtains</defName>
 		<label>door frame curtains</label>
+		<thingClass>Building</thingClass>
 		<description>Curtains for a door frame, its only a docor not a door.</description>
 		<passability>PassThroughOnly</passability>
 		<canOverlapZones>true</canOverlapZones>
@@ -17,7 +18,7 @@
 		<uiIconPath>Things/Building/Furniture/DoorFrameCurtainUI</uiIconPath>
 		<uiIconScale>1.5</uiIconScale>
 		<stuffCategories>
-			<li>Fabric</li>	
+			<li>Fabric</li>
 			<!-- <li>Leathery</li> -->
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
@@ -35,10 +36,18 @@
 		</statBases>
 		<clearBuildingArea>false</clearBuildingArea>
 		<tradeability>None</tradeability>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>OldStyleDeco</designationCategory>
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
 		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 			<li Class="CompProperties_RoomIdentifier">
 				<roomStat>Impressiveness</roomStat>
 			</li>

@@ -1,65 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>More Linkables</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="KitchenCupboard"]/graphicData</xpath>
+	<!--Allow Vanilla production tables to use "gloomy furniture" linkables-->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
-						<graphicData>
-							<texPath>Things/Linkables/Cupboard</texPath>
-							<graphicClass>Graphic_Multi</graphicClass>
-							<shaderType>CutoutComplex</shaderType>
-							<drawSize>(2,2)</drawSize>
-							<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
-							</damageData>
-						</graphicData>
+						<li>GL_Cupboard</li>
+						<li>GL_TablewareShelf</li>
 					</value>
-				</li>
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="KitchenCupboard"]/stuffCategories</xpath>
-					<nomatch Class="PatchOperationSequence">
-						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KitchenCupboard"]</xpath>
-								<value>
-									<costStuffCount>50</costStuffCount>
-								</value>
-							</li>
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="KitchenCupboard"]</xpath>
-								<value>
-									<stuffCategories>
-										<li>Metallic</li>
-										<li>Woody</li>
-									</stuffCategories>
-								</value>
-							</li>
-							<li Class="PatchOperationReplace">
-								<xpath>Defs/ThingDef[defName="KitchenCupboard"]/costList</xpath>
-								<value>
-									<costList>
-										<Steel>25</Steel>
-									</costList>
-								</value>
-							</li>
-						</operations>
-					</nomatch>
-				</li>
-			</operations>
-		</match>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove"]/comps</xpath>
+					<value>
+						<li Class="CompProperties_AffectedByFacilities">
+							<linkableFacilities>
+								<li>GL_Cupboard</li>
+								<li>GL_TablewareShelf</li>
+							</linkableFacilities>
+						</li>
+					</value>
+				</nomatch>
+			</li>
+		</operations>
 	</Operation>
 
-	<!--Medicaddons patch-->
+	<!--"Medicaddons" patch, change textures, change build costs-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>[sd] medicaddons</li>
@@ -67,6 +37,7 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!--Replace textures-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="sd_medicaddons_medieval_surg_instruments"]/graphicData</xpath>
 					<value>
@@ -112,23 +83,8 @@
 						</graphicData>
 					</value>
 				</li>
-			</operations>
-		</match>
-	</Operation>
-
-
-
-	<!--Replace surgical instruments texture from "More Linkables" or "[sd] medicaddons" if mods are installed-->
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>[sd] medicaddons</li>
-			<li>More Linkables</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="SurgicalInstruments" or defName="sd_medicaddons_industrial_surg_instruments"]/graphicData</xpath>
+					<xpath>Defs/ThingDef[defName="sd_medicaddons_industrial_surg_instruments"]/graphicData</xpath>
 					<value>
 						<graphicData>
 							<texPath>Things/Linkables/SurgicalInstruments</texPath>
@@ -144,6 +100,7 @@
 						</graphicData>
 					</value>
 				</li>
+				<!--Instruments Costs-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="sd_medicaddons_industrial_surg_instruments"]/stuffCategories</xpath>
 					<value>
@@ -154,6 +111,113 @@
 						</stuffCategories>
 					</value>
 				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--"More Linkables" patch, change textures, change build costs-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Linkables</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!--Replace textures-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="KitchenCupboard"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Linkables/Cupboard</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(2,2)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="SurgicalInstruments"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Linkables/SurgicalInstruments</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+							<drawSize>(2,2)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				<!--Kitchen Cupboard Costs-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="KitchenCupboard"]/stuffCategories</xpath>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[defName="KitchenCupboard"]/costStuffCount</xpath>
+								<value>
+									<costStuffCount>50</costStuffCount>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[defName="KitchenCupboard"]/stuffCategories</xpath>
+								<value>
+									<stuffCategories>
+										<li>Metallic</li>
+										<li>Woody</li>
+									</stuffCategories>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[defName="KitchenCupboard"]/costList</xpath>
+								<value>
+									<costList>
+										<Steel>25</Steel>
+									</costList>
+								</value>
+							</li>
+
+						</operations>
+					</match>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="KitchenCupboard"]</xpath>
+								<value>
+									<costStuffCount>50</costStuffCount>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="KitchenCupboard"]</xpath>
+								<value>
+									<stuffCategories>
+										<li>Metallic</li>
+										<li>Woody</li>
+									</stuffCategories>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>Defs/ThingDef[defName="KitchenCupboard"]/costList</xpath>
+								<value>
+									<costList>
+										<Steel>25</Steel>
+									</costList>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+				<!--Surgical Instruments Costs-->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="SurgicalInstruments"]</xpath>
 					<value>
@@ -196,16 +260,19 @@
 				<success>Always</success>
 				<operations>
 					<li Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[defName="HospitalBed" or defName="Bed_OperatingTable" or defName="Bed_CryptoBed" or defName="GlitterworldHospitalBedSW" or defName="HerbBede" or defName="MedBed" or defName="IIMed" or @Name="MedPetBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[.=SurgicalLamp]</xpath>
+						<xpath>Defs/ThingDef[defName="SurgicalLamp"]</xpath>
 					</li>
 					<li Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[defName="HospitalBed" or defName="Bed_OperatingTable" or defName="Bed_CryptoBed" or defName="GlitterworldHospitalBedSW" or defName="HerbBede" or defName="MedBed" or defName="IIMed" or @Name="MedPetBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[.=SurgicalInstruments]</xpath>
+						<xpath>Defs/ThingDef[defName="SurgicalInstruments"]</xpath>
 					</li>
 					<li Class="PatchOperationRemove">
 						<xpath>Defs/ResearchProjectDef[defName="SurgicalLamp" or defName="SurgicalInstruments"]</xpath>
 					</li>
 					<li Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[defName="SurgicalLamp" or defName="SurgicalInstruments"]</xpath>
+						<xpath>Defs/ThingDef[defName="HospitalBed" or defName="Bed_OperatingTable" or defName="Bed_CryptoBed" or defName="GlitterworldHospitalBedSW" or defName="HerbBede" or defName="MedBed" or defName="IIMed" or @Name="MedPetBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[.="SurgicalLamp"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="HospitalBed" or defName="Bed_OperatingTable" or defName="Bed_CryptoBed" or defName="GlitterworldHospitalBedSW" or defName="HerbBede" or defName="MedBed" or defName="IIMed" or @Name="MedPetBedWithQualityBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[.="SurgicalInstruments"]</xpath>
 					</li>
 				</operations>
 			</match>
@@ -225,10 +292,10 @@
 				<success>Always</success>
 				<operations>
 					<li Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[defName="ButcherSpot" or defName="TableButcher" or defName="Brewery" or defName="FueledStove" or defName="ElectricStove" or defName="Campfire" or defName="RGK_FueledStove" or defName="GL_ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/KitchenCupboard</xpath>
+						<xpath>Defs/ThingDef[defName="KitchenCupboard"]</xpath>
 					</li>
 					<li Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[defName="KitchenCupboard"]</xpath>
+						<xpath>Defs/ThingDef[defName="ButcherSpot" or defName="TableButcher" or defName="Brewery" or defName="FueledStove" or defName="ElectricStove" or defName="Campfire" or defName="RGK_FueledStove" or defName="GL_ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[.="KitchenCupboard"]</xpath>
 					</li>
 				</operations>
 			</match>
