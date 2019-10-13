@@ -17,7 +17,7 @@ The general idea of this mod is to balance and make more use of Gloomy Furniture
 -More linkables <br /> 
 -[sd] medicaddons <br /> 
 
-#### Suggestet Mods:
+#### Suggested Mods:
 [Better Vanilla Masking](https://steamcommunity.com/sharedfiles/filedetails/?id=1736114368) (make vanilla benches more in style) <br /> 
 [DocWorld](https://github.com/DrZhivago1/DocWorld) (make alot of sorting and fix for other mods) <br /> 
 
