@@ -224,12 +224,9 @@
 							<texPath>Things/Joy/Telescope</texPath>
 							<graphicClass>Graphic_Single</graphicClass>
 							<drawSize>(1,1)</drawSize>
-							<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
-							</damageData>
+							<shadowData>
+								<volume>(0.5, 0.3, 0.4)</volume>
+							</shadowData>
 						</graphicData>
 					</value>
 				</li>
@@ -239,14 +236,14 @@
 					<value>
 						<graphicData>
 							<texPath>Things/Joy/HoopstoneRing</texPath>
-							<graphicClass>Graphic_single</graphicClass>
+							<graphicClass>Graphic_Single</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
-							<drawSize>(1,1)</drawSize>
+							<shadowData>
+								<volume>(0.08, 0.2, 0.08)</volume>
+								<offset>(0, 0, -0.47)</offset>
+							</shadowData>
 							<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
+								<rect>(0.3,0.3,0.4,0.4)</rect>
 							</damageData>
 						</graphicData>
 					</value>
@@ -260,12 +257,6 @@
 							<graphicClass>Graphic_multi</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 							<drawSize>(2,2)</drawSize>
-							<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
-							</damageData>
 						</graphicData>
 					</value>
 				</li>
@@ -277,11 +268,12 @@
 							<texPath>Things/Joy/HorseshoesPin</texPath>
 							<graphicClass>Graphic_Single</graphicClass>
 							<drawSize>(1,1)</drawSize>
+							<shadowData>
+								<volume>(0.08, 0.2, 0.08)</volume>
+								<offset>(0, 0, -0.1)</offset>
+							</shadowData>
 							<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
+								<rect>(0.3,0.3,0.4,0.4)</rect>
 							</damageData>
 						</graphicData>
 					</value>
@@ -294,12 +286,9 @@
 							<texPath>Things/Joy/TubeTelevision</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
 							<drawSize>(1,1)</drawSize>
-							<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
-							</damageData>
+							<shadowData>
+								<volume>(0.5, 0.3, 0.4)</volume>
+							</shadowData>
 						</graphicData>
 					</value>
 				</li>
@@ -311,7 +300,12 @@
 							<texPath>Things/Joy/Gloomy_ChessTable</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
 							<drawSize>(2,2)</drawSize>
+							<shadowData>
+								<volume>(0.65, 0.25, 0.6)</volume>
+								<offset>(0, 0, -0.15)</offset>
+							</shadowData>
 							<damageData>
+								<rect>(0.09375,0.296875,0.796875,0.703125)</rect>
 								<cornerTL>Damage/Corner</cornerTL>
 								<cornerTR>Damage/Corner</cornerTR>
 								<cornerBL>Damage/Corner</cornerBL>
@@ -327,13 +321,12 @@
 						<graphicData>
 							<texPath>Things/Joy/Gloomy_PokerTable2x2</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
 							<drawSize>(4,4)</drawSize>
-							<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
-							</damageData>
+							<shadowData>
+								<volume>(1.6, 0.3, 1.6)</volume>
+								<offset>(0, 0, -0.15)</offset>
+							</shadowData>
 						</graphicData>
 					</value>
 				</li>
@@ -344,6 +337,7 @@
 						<graphicData>
 							<texPath>Things/Joy/BilliardsTable</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
 							<drawSize>(4,4)</drawSize>
 							<damageData>
 								<cornerTL>Damage/Corner</cornerTL>
