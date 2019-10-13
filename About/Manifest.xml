@@ -4,6 +4,9 @@
   <dependencies>
     <li>GloomyFurniture</li>
   </dependencies>
+  <incompatibleWith>
+    <li>GloomyVanilla</li>
+  </incompatibleWith>
   <loadAfter>
     <li>GloomyExtra-Kitchen</li>
     <li>GloomyDeco</li>

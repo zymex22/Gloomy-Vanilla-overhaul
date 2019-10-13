@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- 
-	<ThingDef ParentName="SMFurnitureWithQualityBase">
+
+	<ThingDef ParentName="BuildingBase">
 		<defName>SM_Dice_Table</defName>
 		<label>dice table</label>
 		<description>A table designed for playing dice games. A great way to test your luck.</description>
@@ -12,6 +12,7 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
+		<thingClass>Building</thingClass>
 		<rotatable>true</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -45,12 +46,16 @@
 			<li>BuildingsJoy</li>
 		</thingCategories>
 		<designationCategory>Joy</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
 		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 			<li Class="CompProperties_RoomIdentifier">
 				<roomStat>Impressiveness</roomStat>
 			</li>
 		</comps>
-		
+
 	</ThingDef>
 
 </Defs>
