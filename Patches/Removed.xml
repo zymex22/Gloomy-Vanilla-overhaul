@@ -9,8 +9,6 @@
 			<operations>
 				<li Class="PatchOperationRemove">
 					<xpath>
-						Defs/ThingDef[defName="RGK_Wall"]/designationCategory
-						|
 						Defs/*[self::ThingDef or self::RecipeDef or self::WorkGiverDef]//li[
 						text()="GL_ElectricStove" or 
 						text()="RGK_FueledStove" or 
@@ -29,8 +27,6 @@
 						defName="GL_ElectricTailoringBench" or 
 						defName="GL_FueledSmithy" or 
 						defName="GL_ElectricSmithy" or 
-						defName="RGK_VentWall" or 
-						defName="RGK_WindowWall" or 
 						defName="RGK_bedSingle" or 
 						defName="RGK_bedSingleB" or 
 						defName="RGK_bedDouble" or 
@@ -68,6 +64,32 @@
 					</xpath>
 				</li>
 			</operations>
+		</match>
+	</Operation>
+
+	<!-- Fix for gloomy brick wall mod	-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>GloomyFurniture</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>gloomy brick wall</li>
+			</mods>
+			<nomatch Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationRemove">
+						<xpath>
+						Defs/ThingDef[defName="RGK_Wall"]/designationCategory
+						|
+						Defs/ThingDef[
+						defName="RGK_VentWall" or 
+						defName="RGK_WindowWall"]/*/..
+						</xpath>
+					</li>
+				</operations>
+			</nomatch>
 		</match>
 	</Operation>
 </Patch>
