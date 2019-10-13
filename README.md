@@ -66,6 +66,7 @@ Should be save friendly, however if you use a lot of the removed items (like 2nd
     Rotate option for rugs to change texture to save space in menu (gloomy deco idea)
     Removed 3x1 gloomy butchering table, if gloomy extra - kitchen is installed that one is used.
     // I have decided to continue leaving some things out from Gloomy Furniture, to minimize cluttered menus: 2nd wall type will stay out, 2 tables removed, 2nd bed type removed, light is untouched.
+[More details](https://github.com/zymex22/Gloomy-Vanilla-overhaul/releases/tag/2.1.0.0)
 
 
 
@@ -79,9 +80,10 @@ For now my focus is only early age, maybe later ill try to make some electronics
 Im am no modder/programmer, I have no experience its all trial and error, just felt this was needed and asked for.  <br /> 
 So for any ideas/fixes you know of, enlighten me.  <br /> 
 
+
 #### Big Thanks to 
-Dr_Zhivago for supporting me learning modding. <br /> 
-Semo for help with textures, and patching Gloomy Kitchen mod. <br /> 
-Owlchemist for original Gloomy Vanilla and giving permission to make this. <br /> 
+Dr_Zhivago Modding/coding support. <br /> 
+Semo Help with textures and learn to make them. <br /> 
+Owlchemist Original Gloomy Vanilla Creator. <br /> 
 GloomyLynx for great textures and fantastic mods. <br /> 
-And all original mod makers from the mods we use. <br /> 
+Inverness And all other mods we make patches or use assets from. <br /> 
