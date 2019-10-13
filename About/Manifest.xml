@@ -1,14 +1,18 @@
 <Manifest>
 
-  <version>1.0.0</version>
+  <version>2.1.0</version>
   <dependencies>
     <li>GloomyFurniture</li>
   </dependencies>
+  <incompatibleWith>
+    <li>GloomyVanilla</li>
+  </incompatibleWith>
   <loadAfter>
     <li>GloomyExtra-Kitchen</li>
     <li>GloomyDeco</li>
     <li>MoreLinkables</li>
     <li>[sd]medicaddons</li>
+    <li>IAmHungry</li>
   </loadAfter>
   <suggests>
     <li>DocWorld</li>

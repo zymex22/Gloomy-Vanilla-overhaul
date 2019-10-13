@@ -50,6 +50,14 @@
 				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[
+						defName="GL_DoorFrame"]/designationCategory
+					</xpath>
+					<value>
+						<designationCategory>OldStyleDeco</designationCategory>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[
 						defName="RugA_Small" or
 						defName="RugA" or
 						defName="RugA_Large"]/graphicData/graphicClass
