@@ -11,23 +11,23 @@ The general idea of this mod is to balance and make more use of Gloomy Furniture
 
 
 ### This mod alters the following mods if installed:
--Gloomy furniture
--Gloomy Extra - Kitchen
--Gloomy Deco (planned to add)
--More linkables
--[sd] medicaddons
+-Gloomy furniture <br /> 
+-Gloomy Extra - Kitchen <br /> 
+-Gloomy Deco (planned to add) <br /> 
+-More linkables <br /> 
+-[sd] medicaddons <br /> 
 
 #### Suggestet Mods:
-[Better Vanilla Masking](https://steamcommunity.com/sharedfiles/filedetails/?id=1736114368) (make vanilla benches more in style)
-[DocWorld](https://github.com/DrZhivago1/DocWorld) (make alot of sorting and fix for other mods)
+[Better Vanilla Masking](https://steamcommunity.com/sharedfiles/filedetails/?id=1736114368) (make vanilla benches more in style) <br /> 
+[DocWorld](https://github.com/DrZhivago1/DocWorld) (make alot of sorting and fix for other mods) <br /> 
 
 ### Load order:
--[Gloomy Furniture](https://steamcommunity.com/workshop/filedetails/?id=1558635181)
--[Gloomy Extra - Kitchen](https://steamcommunity.com/sharedfiles/filedetails/?id=1730938407) (optional)
--[Gloomy Deco](https://steamcommunity.com/sharedfiles/filedetails/?id=1865654125) (optional)
--[More Linkables](https://steamcommunity.com/sharedfiles/filedetails/?id=110380920) (optional)
--Gloomy Vanilla Overhaul
--[Docworld](https://github.com/DrZhivago1/DocWorld) (optional)
+-[Gloomy Furniture](https://steamcommunity.com/workshop/filedetails/?id=1558635181) <br /> 
+-[Gloomy Extra - Kitchen](https://steamcommunity.com/sharedfiles/filedetails/?id=1730938407) (optional) <br /> 
+-[Gloomy Deco](https://steamcommunity.com/sharedfiles/filedetails/?id=1865654125) (optional) <br /> 
+-[More Linkables](https://steamcommunity.com/sharedfiles/filedetails/?id=110380920) (optional) <br /> 
+-Gloomy Vanilla Overhaul <br /> 
+-[Docworld](https://github.com/DrZhivago1/DocWorld) (optional) <br /> 
 
 #### Compatibility Notes:
 Will not work with original gloomy vanilla! (this is a replacement for that)
