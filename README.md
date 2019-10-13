@@ -36,17 +36,19 @@ Gloomy brick wall mod dosent work together atm, ill make a fix for it or make my
 Should be save friendly, however if you use a lot of the removed items (like 2nd wall types or beds) it may be very destructive to your current game. <br /> 
 
 ### Changes
-v2.0.0:
-Reintroduced alot of the "removed gloomy stuff" from Gloomy Vanilla
-Moved stuff to proper architecht menus
-Bring back linkables for beds
-Semo updated his mod "Gloomy Extra - Kitchen" to support my version
-Support for Fluffys mod manager (load order suggestion)
-New texture for Vanilla tool cabinet (texture by Semo)
-Moved rugs to new decor menu in newest gloomy furniture
-Rotate option for rugs to change texture to save space in menu (gloomy deco idea)
-Removed 3x1 gloomy butchering table, if gloomy extra - kitchen is installed that one is used.
-// I have decided to continue leaving some things out from Gloomy Furniture, to minimize cluttered menus: 2nd wall type will stay out, 2 tables removed, 2nd bed type removed, light is untouched.
+
+**v2.0.0:**
+
+    Reintroduced alot of the "removed gloomy stuff" from Gloomy Vanilla
+    Moved stuff to proper architecht menus
+    Bring back linkables for beds
+    Semo updated his mod "Gloomy Extra - Kitchen" to support my version
+    Support for Fluffys mod manager (load order suggestion)
+    New texture for Vanilla tool cabinet (texture by Semo)
+    Moved rugs to new decor menu in newest gloomy furniture
+    Rotate option for rugs to change texture to save space in menu (gloomy deco idea)
+    Removed 3x1 gloomy butchering table, if gloomy extra - kitchen is installed that one is used.
+    // I have decided to continue leaving some things out from Gloomy Furniture, to minimize cluttered menus: 2nd wall type will stay out, 2 tables removed, 2nd bed type removed, light is untouched.
 
 
 
