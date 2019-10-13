@@ -2,9 +2,9 @@
 
 REQUIRED MOD: [Gloomy Furniture](https://github.com/solaris0115/GloomyFurniture/releases)
 
-This mod is originally made by Owlchemist I take no credit for the original mod!
-Owlchemist's original mod [Gloomy Vanilla](https://steamcommunity.com/sharedfiles/filedetails/?id=1697864590) is a lightweight version compared to this mod, and since that mod author is taking a break, I've expanded on their work.
-In time I will update this with more mod integration and expand on what the original mod started.
+This mod is originally made by Owlchemist I take no credit for the original mod! <br /> 
+Owlchemist's original mod [Gloomy Vanilla](https://steamcommunity.com/sharedfiles/filedetails/?id=1697864590) is a lightweight version compared to this mod, and since that mod author is taking a break, I've expanded on their work. <br /> 
+In time I will update this with more mod integration and expand on what the original mod started. <br /> 
 
 The general idea of this mod is to balance and make more use of Gloomy Furniture types. This mod will NOT remove as much stuff from Gloomy Furniture, but still includes the nice features from the overhaul that Owlchemist made, so as not to clutter menus too much. I will try to make all gloomy style mods play nice together and with Vanilla. Gloomy furniture will replace Vanilla furniture if it can be replaced and market prices will match Vanilla.
 
@@ -30,10 +30,10 @@ The general idea of this mod is to balance and make more use of Gloomy Furniture
 -[Docworld](https://github.com/DrZhivago1/DocWorld) (optional) <br /> 
 
 #### Compatibility Notes:
-Will not work with original gloomy vanilla! (this is a replacement for that)
-Decore 1.0: run this mod after it because Decore 1.0 also does texture replacements.
-Gloomy brick wall mod dosent work together atm, ill make a fix for it or make my own patch.
-Should be save friendly, however if you use a lot of the removed items (like 2nd wall types or beds) it may be very destructive to your current game.
+Will not work with original gloomy vanilla! (this is a replacement for that) <br /> 
+Decore 1.0: run this mod after it because Decore 1.0 also does texture replacements. <br /> 
+Gloomy brick wall mod dosent work together atm, ill make a fix for it or make my own patch. <br /> 
+Should be save friendly, however if you use a lot of the removed items (like 2nd wall types or beds) it may be very destructive to your current game. <br /> 
 
 ### Changes
 v2.0.0:
@@ -52,17 +52,17 @@ Removed 3x1 gloomy butchering table, if gloomy extra - kitchen is installed that
 
 #### Notes
 This mod includes textures made only for this mod, wich are not found in gloomy furniture, deco, or other mods.
-I will only release small additions in here.
-If it's a bigger collection it will be made a standalone mod and then replacements done with this mod.
-The idea behind this mod is to replace other mods' and Vanilla's textures to give a more overall streamlined feel to it.
+I will only release small additions in here. <br /> 
+If it's a bigger collection it will be made a standalone mod and then replacements done with this mod. <br /> 
+The idea behind this mod is to replace other mods' and Vanilla's textures to give a more overall streamlined feel to it. <br /> 
 
-For now my focus is only early age, maybe later ill try to make some electronics with a style that fits.
-Im am no modder/programmer, I have no experience its all trial and error, just felt this was needed and asked for. 
-So for any ideas/fixes you know of, enlighten me. 
+For now my focus is only early age, maybe later ill try to make some electronics with a style that fits. <br /> 
+Im am no modder/programmer, I have no experience its all trial and error, just felt this was needed and asked for.  <br /> 
+So for any ideas/fixes you know of, enlighten me.  <br /> 
 
 #### Big Thanks to 
-Dr_Zhivago for supporting me learning modding.
-Semo for help with textures, and patching Gloomy Kitchen mod.
-Owlchemist for original Gloomy Vanilla and giving permission to make this.
-GloomyLynx for great textures and fantastic mods.
-And all original mod makers from the mods we use.
+Dr_Zhivago for supporting me learning modding. <br /> 
+Semo for help with textures, and patching Gloomy Kitchen mod. <br /> 
+Owlchemist for original Gloomy Vanilla and giving permission to make this. <br /> 
+GloomyLynx for great textures and fantastic mods. <br /> 
+And all original mod makers from the mods we use. <br /> 
