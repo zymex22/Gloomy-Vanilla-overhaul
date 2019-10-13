@@ -37,6 +37,23 @@ Should be save friendly, however if you use a lot of the removed items (like 2nd
 
 ### Changes
 
+**v2.1.0:**
+    
+    Some of the fixes this version:
+    -patch for Medicaddons ( 3 items, medieval instruments, washpan, lamp)
+    -patch for Medicaddons + more linkables surgical instruments
+    -8 New Joy textures for vanilla textures
+    -New item, dice table
+    -New item door Curtain decor (may be a door later)
+    -Torch texture
+    -new preview picture
+    -remove if both medicaddons and more linkables installed(cabitnet)
+    -remove if both kitchen extra and more linkables installed(cabinet + 1 lamp)
+    -moved door frame and curtain to Deco menu, since its a decor item.
+    -fix for tablewareshelf linkable to stove
+    -fix price on vanilla tool cabinet
+    [More details](https://github.com/zymex22/Gloomy-Vanilla-overhaul/releases/tag/2.1.0.0)
+
 **v2.0.0:**
 
     Reintroduced alot of the "removed gloomy stuff" from Gloomy Vanilla
