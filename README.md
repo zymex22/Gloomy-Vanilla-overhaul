@@ -52,7 +52,7 @@ Should be save friendly, however if you use a lot of the removed items (like 2nd
     -moved door frame and curtain to Deco menu, since its a decor item.
     -fix for tablewareshelf linkable to stove
     -fix price on vanilla tool cabinet
-    [More details](https://github.com/zymex22/Gloomy-Vanilla-overhaul/releases/tag/2.1.0.0)
+[More details](https://github.com/zymex22/Gloomy-Vanilla-overhaul/releases/tag/2.1.0.0)
 
 **v2.0.0:**
 
