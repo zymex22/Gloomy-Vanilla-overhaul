@@ -97,54 +97,6 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="ToolCabinet"]/graphicData</xpath>
-					<value>
-						<graphicData>
-							<texPath>Things/Linkables/ToolCabinet</texPath>
-							<graphicClass>Graphic_Multi</graphicClass>
-							<drawSize>(4,4)</drawSize>
-							<damageData>
-								<cornerTL>Damage/Corner</cornerTL>
-								<cornerTR>Damage/Corner</cornerTR>
-								<cornerBL>Damage/Corner</cornerBL>
-								<cornerBR>Damage/Corner</cornerBR>
-							</damageData>
-						</graphicData>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="ToolCabinet"]/size</xpath>
-					<value>
-						<size>(2,1)</size>
-					</value>
-				</li>
-
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="ToolCabinet"]/stuffCategories</xpath>
-					<nomatch Class="PatchOperationSequence">
-						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
-								<value>
-									<costStuffCount>0</costStuffCount>
-								</value>
-							</li>
-							<li Class="PatchOperationAdd">
-								<xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
-								<value>
-									<stuffCategories>
-										<li>Metallic</li>
-										<li>Woody</li>
-										<li>Stony</li>
-									</stuffCategories>
-								</value>
-							</li>
-						</operations>
-					</nomatch>
-				</li>
-
-				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Stool"]/graphicData</xpath>
 					<value>
 						<graphicData>
@@ -188,6 +140,54 @@
 					</value>
 				</li>
 
+				<!-- Toolcabinet -->
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ToolCabinet"]/graphicData</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Linkables/ToolCabinet</texPath>
+							<graphicClass>Graphic_Multi</graphicClass>
+							<drawSize>(4,4)</drawSize>
+							<damageData>
+								<cornerTL>Damage/Corner</cornerTL>
+								<cornerTR>Damage/Corner</cornerTR>
+								<cornerBL>Damage/Corner</cornerBL>
+								<cornerBR>Damage/Corner</cornerBR>
+							</damageData>
+						</graphicData>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ToolCabinet"]/size</xpath>
+					<value>
+						<size>(2,1)</size>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="ToolCabinet"]/stuffCategories</xpath>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
+								<value>
+									<costStuffCount>0</costStuffCount>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ThingDef[defName="ToolCabinet"]</xpath>
+								<value>
+									<stuffCategories>
+										<li>Metallic</li>
+										<li>Woody</li>
+										<li>Stony</li>
+									</stuffCategories>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+
 				<!-- Other vanilla stuff -->
 
 				<li Class="PatchOperationReplace">
@@ -213,7 +213,7 @@
 					<xpath>Defs/ThingDef[defName="Telescope"]/graphicData</xpath>
 					<value>
 						<graphicData>
-							<texPath>Things/Building/Furniture/Telescope</texPath>
+							<texPath>Things/Joy/Telescope</texPath>
 							<graphicClass>Graphic_Single</graphicClass>
 							<drawSize>(1,1)</drawSize>
 							<damageData>
@@ -230,7 +230,7 @@
 					<xpath>Defs/ThingDef[defName="HoopstoneRing"]/graphicData</xpath>
 					<value>
 						<graphicData>
-							<texPath>Things/Building/Furniture/HoopstoneRing</texPath>
+							<texPath>Things/Joy/HoopstoneRing</texPath>
 							<graphicClass>Graphic_single</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 							<drawSize>(1,1)</drawSize>
@@ -248,7 +248,7 @@
 					<xpath>Defs/ThingDef[defName="GameOfUrBoard"]/graphicData</xpath>
 					<value>
 						<graphicData>
-							<texPath>Things/Building/Furniture/GameOfUr</texPath>
+							<texPath>Things/Joy/GameOfUr</texPath>
 							<graphicClass>Graphic_multi</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 							<drawSize>(2,2)</drawSize>
@@ -261,12 +261,12 @@
 						</graphicData>
 					</value>
 				</li>
-			
+
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="HorseshoesPin"]/graphicData</xpath>
 					<value>
 						<graphicData>
-							<texPath>Things/Building/Furniture/HorseshoesPin</texPath>
+							<texPath>Things/Joy/HorseshoesPin</texPath>
 							<graphicClass>Graphic_Single</graphicClass>
 							<drawSize>(1,1)</drawSize>
 							<damageData>
@@ -277,13 +277,13 @@
 							</damageData>
 						</graphicData>
 					</value>
-				</li>				
+				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="TubeTelevision"]/graphicData</xpath>
 					<value>
 						<graphicData>
-							<texPath>Things/Building/Furniture/TubeTelevision</texPath>
+							<texPath>Things/Joy/TubeTelevision</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
 							<drawSize>(1,1)</drawSize>
 							<damageData>
@@ -294,13 +294,13 @@
 							</damageData>
 						</graphicData>
 					</value>
-				</li>				
+				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="ChessTable"]/graphicData</xpath>
 					<value>
 						<graphicData>
-							<texPath>Things/Building/Furniture/Gloomy_ChessTable</texPath>
+							<texPath>Things/Joy/Gloomy_ChessTable</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
 							<drawSize>(2,2)</drawSize>
 							<damageData>
@@ -317,7 +317,7 @@
 					<xpath>Defs/ThingDef[defName="PokerTable"]/graphicData</xpath>
 					<value>
 						<graphicData>
-							<texPath>Things/Building/Furniture/Gloomy_PokerTable2x2</texPath>
+							<texPath>Things/Joy/Gloomy_PokerTable2x2</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
 							<drawSize>(4,4)</drawSize>
 							<damageData>
@@ -328,13 +328,13 @@
 							</damageData>
 						</graphicData>
 					</value>
-				</li>				
+				</li>
 
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="BilliardsTable"]/graphicData</xpath>
 					<value>
 						<graphicData>
-							<texPath>Things/Building/Furniture/BilliardsTable</texPath>
+							<texPath>Things/Joy/BilliardsTable</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
 							<drawSize>(4,4)</drawSize>
 							<damageData>
@@ -345,7 +345,7 @@
 							</damageData>
 						</graphicData>
 					</value>
-				</li>		
+				</li>
 
 				<!-- Tables -->
 
