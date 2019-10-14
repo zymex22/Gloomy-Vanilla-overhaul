@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--If SYR Doormats are installed replace textures -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[SYR] Doormats</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="DoorMatBase"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Rug/DoorMat</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="DoorMatMediumBase"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Rug/DoorMatMedium</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="DoorMatBigBase"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Rug/DoorMatBig</texPath>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!--If LT doormats are installed replace textures -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Door Mat R1.0</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="LT_MatBase"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Rug/DoorMat</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="LT_MatBigBase"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/Rug/DoorMatBig</texPath>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
