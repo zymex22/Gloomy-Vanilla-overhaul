@@ -79,7 +79,6 @@ For now my focus is only early age, maybe later ill try to make some electronics
 Im am no modder/programmer, I have no experience its all trial and error, just felt this was needed and asked for.  <br /> 
 So for any ideas/fixes you know of, enlighten me.  <br /> 
 
-
 #### Big Thanks to 
 Dr_Zhivago Modding/coding support. <br /> 
 Semo Help with textures and learn to make them. <br /> 
