@@ -5,7 +5,7 @@
 			<li>GloomyFurniture</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success> <!-- if this fails, then another mod probably already Stuffs these -->
+			<success>Always</success>			<!-- if this fails, then another mod probably already Stuffs these -->
 			<operations>
 				<li Class="PatchOperationSequence">
 					<operations>
@@ -44,7 +44,7 @@
 						</li>
 					</operations>
 				</li>
-				
+
 				<li Class="PatchOperationSequence">
 					<operations>
 						<li Class="PatchOperationReplace">
@@ -94,7 +94,43 @@
 						</li>
 					</operations>
 				</li>
+				<!--Stuffed furniture-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="RGK_TableB" or defName="RGK_MiniTableA" or defName="RGKDiningChair" or defName="RGK_MiniTableB"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>Woody</li>
+							<li>Stony</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<!--misc-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="GL_Bench" or defName="RGK_Manger" or defName="GL_DoorFrame" or defName="RGK_DoorOld"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+							<li>Stony</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<!--locker-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="GL_Locker"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>Leathery</li>
+							<li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+
 			</operations>
 		</match>
 	</Operation>
 </Patch>
+
+
+
+
