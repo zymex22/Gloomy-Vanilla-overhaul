@@ -32,7 +32,6 @@ The general idea of this mod is to balance and make more use of Gloomy Furniture
 #### Compatibility Notes:
 Will not work with original gloomy vanilla! (this is a replacement for that) <br /> 
 Decore 1.0: run this mod after it because Decore 1.0 also does texture replacements. <br /> 
-Gloomy brick wall mod dosent work together atm, ill make a fix for it or make my own patch. <br /> 
 Should be save friendly, however if you use a lot of the removed items (like 2nd wall types or beds) it may be very destructive to your current game. <br /> 
 
 ### Changes
