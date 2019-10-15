@@ -19,7 +19,7 @@
 		<uiIconScale>1.5</uiIconScale>
 		<stuffCategories>
 			<li>Fabric</li>
-			<!-- <li>Leathery</li> -->
+			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
 		<techLevel>Medieval</techLevel>
