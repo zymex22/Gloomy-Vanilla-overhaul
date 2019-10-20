@@ -32,10 +32,26 @@ The general idea of this mod is to balance and make more use of Gloomy Furniture
 #### Compatibility Notes:
 Will not work with original gloomy vanilla! (this is a replacement for that) <br /> 
 Decore 1.0: run this mod after it because Decore 1.0 also does texture replacements. <br /> 
-Gloomy brick wall mod dosent work together atm, ill make a fix for it or make my own patch. <br /> 
 Should be save friendly, however if you use a lot of the removed items (like 2nd wall types or beds) it may be very destructive to your current game. <br /> 
 
 ### Changes
+
+**v2.1.0:**
+    
+    Some of the fixes this version:
+    -patch for Medicaddons ( 3 items, medieval instruments, washpan, lamp)
+    -patch for Medicaddons + more linkables surgical instruments
+    -8 New Joy textures for vanilla textures
+    -New item, dice table
+    -New item door Curtain decor (may be a door later)
+    -Torch texture
+    -new preview picture
+    -remove if both medicaddons and more linkables installed(cabitnet)
+    -remove if both kitchen extra and more linkables installed(cabinet + 1 lamp)
+    -moved door frame and curtain to Deco menu, since its a decor item.
+    -fix for tablewareshelf linkable to stove
+    -fix price on vanilla tool cabinet
+[More details](https://github.com/zymex22/Gloomy-Vanilla-overhaul/releases/tag/2.1.0.0)
 
 **v2.0.0:**
 
@@ -49,6 +65,7 @@ Should be save friendly, however if you use a lot of the removed items (like 2nd
     Rotate option for rugs to change texture to save space in menu (gloomy deco idea)
     Removed 3x1 gloomy butchering table, if gloomy extra - kitchen is installed that one is used.
     // I have decided to continue leaving some things out from Gloomy Furniture, to minimize cluttered menus: 2nd wall type will stay out, 2 tables removed, 2nd bed type removed, light is untouched.
+[More details](https://github.com/zymex22/Gloomy-Vanilla-overhaul/releases/tag/2.1.0.0)
 
 
 
@@ -63,8 +80,8 @@ Im am no modder/programmer, I have no experience its all trial and error, just f
 So for any ideas/fixes you know of, enlighten me.  <br /> 
 
 #### Big Thanks to 
-Dr_Zhivago for supporting me learning modding. <br /> 
-Semo for help with textures, and patching Gloomy Kitchen mod. <br /> 
-Owlchemist for original Gloomy Vanilla and giving permission to make this. <br /> 
+Dr_Zhivago Modding/coding support. <br /> 
+Semo Help with textures and learn to make them. <br /> 
+Owlchemist Original Gloomy Vanilla Creator. <br /> 
 GloomyLynx for great textures and fantastic mods. <br /> 
-And all original mod makers from the mods we use. <br /> 
+Inverness And all other mods we make patches or use assets from. <br /> 
