@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!--Allow Vanilla production tables to use "gloomy furniture" linkables-->
+	<!--Allow Vanilla production tables and beds to use "gloomy furniture" linkables-->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -25,6 +25,12 @@
 						</li>
 					</value>
 				</nomatch>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Bed" or defName="DoubleBed" or defName="RoyalBed" or defName="HospitalBed" or defName="Bedroll" or defName="BedrollDouble" or defName="AnimalSleepingBox" or defName="AnimalBed"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>GL_Teddy</li>
+				</value>
 			</li>
 		</operations>
 	</Operation>
