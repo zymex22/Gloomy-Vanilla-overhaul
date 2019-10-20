@@ -7,6 +7,58 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[
+						defName="RGK_FueledStove" or 
+						defName="GL_ElectricStove" or 
+						defName="GL_HandTailoringBench" or 
+						defName="GL_ElectricTailoringBench" or 
+						defName="GL_FueledSmithy" or 
+						defName="GL_ElectricSmithy" or 
+						defName="RGK_bedSingle" or 
+						defName="RGK_bedSingleB" or 
+						defName="RGK_bedDouble" or 
+						defName="RGK_bedDoubleB" or 
+						defName="GL_ClassyDoubleBed" or
+						defName="RGK_EndTableWithLamp" or 
+						defName="RGK_EndTableWithLampE" or
+						defName="WardrobeB" or
+						defName="RGK_lampE" or 
+						defName="RGK_Street_Lamp_L" or 
+						defName="RGK_Street_Lamp_SevenE" or 
+						defName="GL_Bonfire" or 
+						defName="RGK_FireplaceE" or 
+						defName="RGK_SimpleResearchBench" or
+						defName="RGK_TableD" or 
+						defName="GL_Shelf"]/designationCategory
+					</xpath>
+					<value>
+					<designationCategory Inherit="false" />
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="RGK_Dresser" or
+						defName="RGK_EndTable" or 
+						defName="RGK_SimpleChair" or
+						defName="RGK_Chair" or
+						defName="RGK_TableA" or 
+						defName="RGK_TableC" or 
+						defName="RGK_TableE" or
+						defName="RGK_TableF" or
+						defName="RGK_TableG" or 
+						defName="RGK_TableH" or
+						defName="RugB_Small" or 
+ 						defName="RugC_Small" or
+						defName="RugB" or 
+						defName="RugC" or
+						defName="RugB_Large" or 
+						defName="RugC_Large"]
+					</xpath>
+					<value>
+					<designationCategory Inherit="false" />
+					</value>
+				</li>
 				<li Class="PatchOperationRemove">
 					<xpath>
 						Defs/*[self::ThingDef or self::RecipeDef or self::WorkGiverDef]//li[
@@ -19,48 +71,6 @@
 						text()="GL_ElectricSmithy"]
 						|
 						Defs/DesignationCategoryDef[defName="OldStyleFurniture"]
-						|
-						Defs/ThingDef[
-						defName="RGK_FueledStove" or 
-						defName="GL_ElectricStove" or 
-						defName="GL_HandTailoringBench" or 
-						defName="GL_ElectricTailoringBench" or 
-						defName="GL_FueledSmithy" or 
-						defName="GL_ElectricSmithy" or 
-						defName="RGK_bedSingle" or 
-						defName="RGK_bedSingleB" or 
-						defName="RGK_bedDouble" or 
-						defName="RGK_bedDoubleB" or 
-						defName="GL_ClassyDoubleBed" or 
-						defName="RGK_Dresser" or 
-						defName="RGK_EndTable" or 
-						defName="RGK_EndTableWithLamp" or 
-						defName="RGK_EndTableWithLampE" or 
-						defName="RGK_SimpleChair" or 
-						defName="RGK_Chair" or 
-						defName="WardrobeB" or
-						defName="RGK_lampE" or 
-						defName="RGK_Street_Lamp_L" or 
-						defName="RGK_Street_Lamp_SevenE" or 
-						defName="GL_Bonfire" or 
-						defName="RGK_FireplaceE" or 
-						defName="RGK_SimpleResearchBench" or
-						defName="RugB_Small" or 
- 						defName="RugC_Small" or
-						defName="RugB" or 
-						defName="RugC" or
-						defName="RugB_Large" or 
-						defName="RugC_Large" or
-						defName="RGK_TableA" or 
-						defName="RGK_TableC" or 
-						defName="RGK_TableD" or 
-						defName="RGK_TableE" or 
-						defName="RGK_TableF" or 
-						defName="RGK_TableG" or 
-						defName="RGK_TableH" or 
-						defName="GL_Shelf"]/*/..
-						|
-						Defs/ThingDef[defName="Armchair"][comps]/comps
 					</xpath>
 				</li>
 			</operations>
