@@ -13,6 +13,7 @@
     <li>MoreLinkables</li>
     <li>[sd]medicaddons</li>
     <li>IAmHungry</li>
+    <li>StuffedWorkbenches</li>
   </loadAfter>
   <suggests>
     <li>DocWorld</li>
