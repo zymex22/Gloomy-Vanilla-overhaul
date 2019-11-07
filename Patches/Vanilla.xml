@@ -5,6 +5,7 @@
 			<li>GloomyFurniture</li>
 		</mods>
 		<match Class="PatchOperationSequence">
+			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Bed"]/graphicData</xpath>
