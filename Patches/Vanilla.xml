@@ -237,7 +237,7 @@
 					<value>
 						<graphicData>
 							<texPath>Things/Joy/HoopstoneRing</texPath>
-							<graphicClass>Graphic_Single</graphicClass>
+							<graphicClass>Graphic_Multi</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 							<shadowData>
 								<volume>(0.08, 0.2, 0.08)</volume>
@@ -247,6 +247,22 @@
 								<rect>(0.3,0.3,0.4,0.4)</rect>
 							</damageData>
 						</graphicData>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HoopstoneRing"]/rotatable</xpath>
+					<value>
+						<rotatable>true</rotatable>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "HoopstoneRing"]</xpath>
+					<value>
+						<placeWorkers>
+							<li>PlaceWorker_WatchArea</li>
+						</placeWorkers>
 					</value>
 				</li>
 
@@ -267,7 +283,7 @@
 					<value>
 						<graphicData>
 							<texPath>Things/Joy/HorseshoesPin</texPath>
-							<graphicClass>Graphic_Single</graphicClass>
+							<graphicClass>Graphic_multi</graphicClass>
 							<drawSize>(1,1)</drawSize>
 							<shadowData>
 								<volume>(0.08, 0.2, 0.08)</volume>
@@ -277,6 +293,22 @@
 								<rect>(0.3,0.3,0.4,0.4)</rect>
 							</damageData>
 						</graphicData>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="HorseshoesPin"]/rotatable</xpath>
+					<value>
+						<rotatable>true</rotatable>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="HorseshoesPin"]</xpath>
+					<value>
+						<placeWorkers>
+							<li>PlaceWorker_WatchArea</li>
+						</placeWorkers>
 					</value>
 				</li>
 
