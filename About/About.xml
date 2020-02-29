@@ -3,8 +3,10 @@
 	<name>Gloomy Vanilla Overhaul</name>
 	<author>Owlchemist | Zymex | Dr_Zhivago</author>
 	<supportedVersions>
+		<li>1.0</li>
 		<li>1.1</li>
 	</supportedVersions>
+	<packageId>zymex.GloomyVanillaOverhaul</packageId>
 	<description>
 		Changes the GloomyFurniture mod to replace vanilla assets where appropriate. Any additional content was rebalanced to be more in line with vanilla values. Some excess assets were removed to keep the build menus less bloated.
 	</description>
