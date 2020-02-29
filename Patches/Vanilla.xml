@@ -257,15 +257,6 @@
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "HoopstoneRing"]</xpath>
-					<value>
-						<placeWorkers>
-							<li>PlaceWorker_WatchArea</li>
-						</placeWorkers>
-					</value>
-				</li>
-
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="GameOfUrBoard"]/graphicData</xpath>
 					<value>
@@ -300,15 +291,6 @@
 					<xpath>Defs/ThingDef[defName="HorseshoesPin"]/rotatable</xpath>
 					<value>
 						<rotatable>true</rotatable>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="HorseshoesPin"]</xpath>
-					<value>
-						<placeWorkers>
-							<li>PlaceWorker_WatchArea</li>
-						</placeWorkers>
 					</value>
 				</li>
 
