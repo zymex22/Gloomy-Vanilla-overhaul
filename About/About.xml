@@ -6,9 +6,28 @@
 		<li>1.0</li>
 		<li>1.1</li>
 	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Solaris.FurnitureBase</packageId>
+			<displayName>Gloomy Furniture</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/1558635181</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Solaris.FurnitureBase</li>
+		<li>zymex.medicaddons</li>
+		<li>4loris4.MoreLinkables</li>
+		<li>Dalrae.GloomyDeco</li>
+	</loadAfter>
 	<packageId>zymex.GloomyVanillaOverhaul</packageId>
 	<description>
-		Changes the GloomyFurniture mod to replace vanilla assets where appropriate. Any additional content was rebalanced to be more in line with vanilla values. Some excess assets were removed to keep the build menus less bloated.
+	[Royal version] TEASER There will be a Royal Dlc update at some point, to make royal dlc play more nicly with gloomy mods, and get more use of it.
+	Also maybe i few new items, i mean comeon? Royals are made for a gloomy theme!
+
+	[zymex version] This version take best from both worlds.
+	Still make things less bloated but still keep most gloomy furniture stuff ingame, even add a few extras only in this mod.
+	
+	[original]	Changes the GloomyFurniture mod to replace vanilla assets where appropriate. Any additional content was rebalanced to be more in line with vanilla values. Some excess assets were removed to keep the build menus less bloated.
 	</description>
 
 </ModMetaData>
