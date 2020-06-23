@@ -149,6 +149,12 @@
 						<li>Electricity</li>
 					</value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="GL_lamp_White" or defName="GL_LampM_White" or defName="GL_lampE_White"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Furniture</designationCategory>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
