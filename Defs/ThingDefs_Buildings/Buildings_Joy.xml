@@ -47,12 +47,9 @@
 		</thingCategories>
 		<designationCategory>Joy</designationCategory>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<comps>
+				<comps>
 			<li>
 				<compClass>CompQuality</compClass>
-			</li>
-			<li Class="CompProperties_RoomIdentifier">
-				<roomStat>Impressiveness</roomStat>
 			</li>
 		</comps>
 

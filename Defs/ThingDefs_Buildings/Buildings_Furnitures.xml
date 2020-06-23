@@ -44,14 +44,6 @@
 		<thingCategories>
 			<li>BuildingsFurniture</li>
 		</thingCategories>
-		<comps>
-			<li>
-				<compClass>CompQuality</compClass>
-			</li>
-			<li Class="CompProperties_RoomIdentifier">
-				<roomStat>Impressiveness</roomStat>
-			</li>
-		</comps>
 	</ThingDef>
 
 </Defs>

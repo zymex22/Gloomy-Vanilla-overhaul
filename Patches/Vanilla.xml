@@ -72,6 +72,31 @@
 						<li>GL_Teddy</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="RoyalBed"]/comps</xpath>
+					<value>
+						<li Class="Gloomylynx.CompProperties_SecondLayerFollow">
+							<graphicData>
+								<texPath>Things/Building/Furniture/GL_ClassyDoubleBedFrame</texPath>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<shaderType>Transparent</shaderType>
+								<drawSize>(4,4)</drawSize>
+							</graphicData>
+							<altitudeLayer>Pawn</altitudeLayer>
+						</li>
+						<li Class="Gloomylynx.CompProperties_SecondLayer">
+							<graphicData>
+								<texPath>Things/Building/Furniture/GL_ClassyDoubleBedLace</texPath>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<shaderType>Transparent</shaderType>
+								<drawSize>(4.05,4.05)</drawSize>
+								<color>(1,1,1,0.93)</color>
+							</graphicData>
+							<altitudeLayer>Blueprint</altitudeLayer>
+						</li>
+					</value>
+				</li>
+
 
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="EndTable"]/graphicData/texPath</xpath>
