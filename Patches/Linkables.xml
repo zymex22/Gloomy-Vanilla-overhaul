@@ -301,7 +301,7 @@
 						<xpath>Defs/ThingDef[defName="KitchenCupboard"]</xpath>
 					</li>
 					<li Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[defName="ButcherSpot" or defName="TableButcher" or defName="Brewery" or defName="FueledStove" or defName="ElectricStove" or defName="Campfire" or defName="RGK_FueledStove" or defName="GL_ElectricStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[.="KitchenCupboard"]</xpath>
+						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[.="KitchenCupboard"]</xpath>
 					</li>
 				</operations>
 			</match>
